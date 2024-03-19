@@ -1,0 +1,15 @@
+.menu{
+    display:flex;
+    justify-content:space-between;
+}
+.navbar-brand{
+
+}
+.card_menu{
+    display:flex;
+    justify-content:space-between;
+}
+
+#sale_container{
+    display:flex;
+}
