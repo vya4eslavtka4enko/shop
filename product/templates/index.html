@@ -10,9 +10,9 @@
 <body>
     <div class="container menu">
         <nav class="navbar bg-body-tertiary">
-        <div class="container">
+        <div class="logo">
             <a class="navbar-brand" href="#" style="background-color: transparent;">
-                <img src="{%static 'img/logo.png'%}" alt="Bootstrap" width="74" height="74" >
+                <img src="{%static 'img/logo.png'%}" alt="Bootstrap" width="124" height="104" >
             </a>
         </div>
         </nav>
@@ -45,7 +45,7 @@
       </form>
 </nav>
         </div>
-    <div class="container">
+    <div class="container mt-4">
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
@@ -68,31 +68,31 @@
           </button>
         </div>
     </div>
-    <div class="container card_menu mt-4">
+    <div class="container card_menu mt-5">
     <div class="card" style="width: 24rem;">
       <img src="{%static 'img/man.jpeg'%}" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+        <h5 class="card-title">Man Clothes</h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <a href="{%url 'man_clothes'%}" class="btn btn-primary">Man</a>
       </div>
     </div>
 
     <div class="card" style="width: 24rem;">
       <img src="{%static 'img/woman.avif'%}" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+        <h5 class="card-title">Woman Clothes</h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <a href="{%url 'woman_clothes'%}" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
 
     <div class="card" style="width: 24rem;">
       <img src="{%static 'img/kids.webp'%}" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+        <h5 class="card-title">Kids Clothes</h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <a href="{%url 'kids_clothes'%}" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
     </div>

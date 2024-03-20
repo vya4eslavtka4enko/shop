@@ -13,3 +13,20 @@
 #sale_container{
     display:flex;
 }
+
+.part{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+.card img{
+    border:1px solid grey;
+    border-radius:5px;
+}
+.logo{
+    position:absolute;
+    z-index:999;
+    top:-2px
+
+}
+

@@ -1,0 +1,22 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="{%static 'css/style.css'%}" rel="stylesheet">
+</head>
+<body>
+    <div class = 'container part'>
+        {%for item in kids_data%}
+           <div class="card" style="width: 18rem;">
+                <img src='/{{item.photo}}' class="card-img-top" alt="..." style="width: 18rem;>
+                <div class="card-body">
+                <h5 class="card-title">{{item.product_name}}</h5>
+                <p class="card-text">{{item.description}}</p>
+                <h4>$ {{item.price}}</h4>
+           </div>
+        {%endfor%}
+    </div>
+</body>
+</html>
