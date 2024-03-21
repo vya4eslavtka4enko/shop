@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from .models import Kids,Man,Woman,InSale
 def main(request):
-    return render(request,'index.html')
+    inSaleData = InSale.objects.all()
+    return render(request,'index.html',{'inSaleData':inSaleData})
 
 
 def kids_clothes(request):
